@@ -1,0 +1,126 @@
+﻿body, header, footer, div, span, p, h1, h2, a, nav, ul, li {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+#wrapper {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+
+}
+
+header {
+    background-image:url("../images/wood-background.png");
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    color:white;
+    width:100%;
+    border:2px solid red;
+    height:100px;
+    order:0;
+}
+
+    header nav {
+        align-self:flex-end;
+        display:flex;
+        flex-flow: row wrap;
+        justify-content:flex-end;
+        margin-top: 50px;
+        width:70%;
+    }
+
+        header nav>ul>li {
+            list-style-type:none;   
+            display:inline-block;    
+        }
+
+            header nav>ul>li a {
+                display:block;
+                text-decoration:none;
+                color:red;
+                padding:20px;
+                font-weight:bold;
+            }
+
+            header nav>ul>li a:hover {
+                background-color:#808080;
+            }
+
+            header nav ul li ul {
+                display:none;
+                position:absolute;
+            }
+
+                 header nav li ul li {
+                    list-style-type:none;
+                    float: none; 
+                    background:black;
+		            border-top: 1px solid #6b727c;
+		            border-bottom: 1px solid #575f6a;
+                }    
+
+                header nav li:hover>ul {
+                    display:block;
+                }   
+                
+               
+
+#banner {
+    width:100%;
+    order:1;
+    background-image:url("../images/DarkForest.jpg");
+    background-size:100%;
+    height:350px;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+}
+
+#frontPage {
+    align-self: flex-end;
+    color:white;
+}
+
+    
+
+#wrapper>section:nth-of-type(2) {
+    background-color:black;
+    color:white;
+    width:100%;
+    /*Flexbox*/
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    order:2;
+}
+
+    #about {
+        width:33%;
+        order:0;
+    }
+
+    #fast-track {
+        width:33%;
+        order:1;
+    }
+
+    #news {
+        width:33%;
+        order:2;
+    }
+
+#footer {
+    width:100%;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    background-color:black;
+    color:red;
+    order:3;
+}
+    #footer>div {
+        width:33%;
+    }
