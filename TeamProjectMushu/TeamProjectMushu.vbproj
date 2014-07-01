@@ -87,8 +87,12 @@
     <Content Include="contacts.html" />
     <Content Include="dorms.html" />
     <Content Include="fasttrack.html" />
+    <Content Include="images\andrei.jpg" />
+    <Content Include="images\andrei.png" />
     <Content Include="images\DarkForest.jpg" />
+    <Content Include="images\kiko.jpg" />
     <Content Include="images\logo.png" />
+    <Content Include="images\unknown.png" />
     <Content Include="images\wood-background.png" />
     <Content Include="index.html" />
     <Content Include="job.html" />
